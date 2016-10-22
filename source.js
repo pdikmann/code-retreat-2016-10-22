@@ -1,3 +1,6 @@
+function foo(a) {
+}
+foo({ i: 1, s: "hey" });
 var Cell = (function () {
     function Cell(status) {
         this._status = status;

@@ -37,5 +37,16 @@ describe( 'Cell', function(){
       .hasLength( 1 )
       .object(ns[0])
       .is( b )
+    test
+        .given( a = new source.Cell() )
+        .given( b = new source.Cell() )
+        .given( c = new source.Cell() )
+        .and ( a.addNeighbour(b) )
+        .and ( ns = a.listNeighbours() )
+        .array( ns )
+        .hasLength( 1 )
+        .object(ns[0])
+        .is( b )
+
   })
 })

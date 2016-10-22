@@ -1,9 +1,20 @@
 ///<reference path='typescript-node-definitions/node.d.ts'/>
 
+interface Bar {
+  i : number;
+  s : string;
+}
+
+function foo( a : Bar ){
+
+}
+
+foo( { i : 1, s : "hey" });
+
 class Cell {
   _status : String;
   _neighbour : Cell;
-  constructor(status : String ){
+  constructor( status : String ){
     this._status = status;
   }
   status (){
