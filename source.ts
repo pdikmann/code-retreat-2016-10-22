@@ -2,6 +2,7 @@
 
 class Cell {
   _status : String;
+  _neighbour : Cell;
   constructor(status : String ){
     this._status = status;
   }
@@ -9,11 +10,11 @@ class Cell {
     return this._status;
   }
   addNeighbour( n ){
-
+    this._neighbour = n;
   }
 
   listNeighbours() {
-    return [1];
+    return [ this._neighbour ];
   }
 }
 

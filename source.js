@@ -6,9 +6,10 @@ var Cell = (function () {
         return this._status;
     };
     Cell.prototype.addNeighbour = function (n) {
+        this._neighbour = n;
     };
     Cell.prototype.listNeighbours = function () {
-        return [1];
+        return [this._neighbour];
     };
     return Cell;
 }());
