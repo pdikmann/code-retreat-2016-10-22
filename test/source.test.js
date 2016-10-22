@@ -14,5 +14,11 @@ describe( 'Cell', function(){
       .then( r = to.status() )
       .string( r )
       .is( 'alive' )
+    test
+      .given( to = new source.Cell( 'dead' ) )
+      .object( to )
+      .then( r = to.status() )
+      .string( r )
+      .is( 'dead' )
   })
 })
