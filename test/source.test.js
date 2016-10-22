@@ -1,9 +1,10 @@
 var test = require( 'unit.js' );
 var source = require( '../source.js' );
 
-describe( 'A failing test', function(){
-  it( 'should fail', function(){
+describe( 'Cell', function(){
+  it( 'can create cells', function(){
     test
-      .object( [] )
+      .given( to = new source.Cell( 'alive' ) )
+      .object( to )
   })
 })
