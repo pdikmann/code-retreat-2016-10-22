@@ -7,6 +7,9 @@ var Cell = (function () {
     };
     Cell.prototype.addNeighbour = function (n) {
     };
+    Cell.prototype.listNeighbours = function () {
+        return new Array();
+    };
     return Cell;
 }());
 exports.Cell = Cell;

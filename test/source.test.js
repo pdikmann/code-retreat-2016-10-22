@@ -27,4 +27,12 @@ describe( 'Cell', function(){
       .given( b = new source.Cell() )
       .then ( a.addNeighbour(b) )
   })
+  it( 'can ask for list of neighbours', function(){
+    test
+      .given( a = new source.Cell() )
+      .given( b = new source.Cell() )
+      .and ( a.addNeighbour(b) )
+      .and ( ns = a.listNeighbours() )
+      .array( ns )
+  })
 })

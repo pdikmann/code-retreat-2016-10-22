@@ -9,7 +9,11 @@ class Cell {
     return this._status;
   }
   addNeighbour( n ){
-    
+
+  }
+
+  listNeighbours() {
+    return new Array();
   }
 }
 
