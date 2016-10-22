@@ -1,0 +1,15 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "code retreat template",
+  "main": "source.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test --recursive --reporter spec --watch"
+  },
+  "author": "philipp dikmann",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "^3.1.2",
+    "unit.js": "^2.0.0"
+  }
+}
