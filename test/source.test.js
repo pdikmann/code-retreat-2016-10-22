@@ -7,4 +7,12 @@ describe( 'Cell', function(){
       .given( to = new source.Cell( 'alive' ) )
       .object( to )
   })
+  it( 'can ask cell about its status', function(){
+    test
+      .given( to = new source.Cell( 'alive' ) )
+      .object( to )
+      .then( r = to.status() )
+      .string( r )
+      .is( 'alive' )
+  })
 })

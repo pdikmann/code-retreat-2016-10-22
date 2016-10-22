@@ -2,7 +2,9 @@
 
 class Cell {
   constructor(status : String ){
-    
+  }
+  status (){
+    return 'alive';
   }
 }
 
