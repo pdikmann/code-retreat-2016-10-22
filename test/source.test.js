@@ -34,5 +34,6 @@ describe( 'Cell', function(){
       .and ( a.addNeighbour(b) )
       .and ( ns = a.listNeighbours() )
       .array( ns )
+      .hasLength( 1 )
   })
 })

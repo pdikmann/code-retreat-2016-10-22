@@ -13,7 +13,7 @@ class Cell {
   }
 
   listNeighbours() {
-    return new Array();
+    return [1];
   }
 }
 

@@ -8,7 +8,7 @@ var Cell = (function () {
     Cell.prototype.addNeighbour = function (n) {
     };
     Cell.prototype.listNeighbours = function () {
-        return new Array();
+        return [1];
     };
     return Cell;
 }());
