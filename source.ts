@@ -8,6 +8,9 @@ class Cell {
   status (){
     return this._status;
   }
+  addNeighbour( n ){
+    
+  }
 }
 
 exports.Cell = Cell;

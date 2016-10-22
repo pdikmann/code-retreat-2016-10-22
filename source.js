@@ -5,6 +5,8 @@ var Cell = (function () {
     Cell.prototype.status = function () {
         return this._status;
     };
+    Cell.prototype.addNeighbour = function (n) {
+    };
     return Cell;
 }());
 exports.Cell = Cell;

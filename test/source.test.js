@@ -21,4 +21,10 @@ describe( 'Cell', function(){
       .string( r )
       .is( 'dead' )
   })
+  it( 'can add neighbours', function(){
+    test
+      .given( a = new source.Cell() )
+      .given( b = new source.Cell() )
+      .then ( a.addNeighbour(b) )
+  })
 })
